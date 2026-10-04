@@ -1,0 +1,159 @@
+:root {
+  --red: #da2d13;
+  --dark: #0e2320;
+  --slate: #526360;
+  --border: #dfd9cd;
+  --cream: #faf7f0;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--dark);
+  background-color: var(--cream);
+  line-height: 1.6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.875rem 1.5rem; /* was 14px 24px */
+  background-color: var(--cream);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-info {
+  display: none;
+  align-items: center;
+  gap: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.location {
+  background-color: var(--dark);
+  color: #e7e5e4;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.6875rem;
+}
+
+.location::before {
+  content: "";
+  display: inline-block;
+  width: 0.375rem;
+  height: 0.375rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--red);
+}
+
+.divider {
+  color: #cfc8ba;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem; /* was 14px */
+  text-decoration: none;
+}
+
+.brand img {
+  border-radius: 50%;
+  border: 2px solid var(--dark);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--red);
+}
+
+.brand-sub {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--slate);
+}
+
+.brand-sub strong {
+  color: var(--dark);
+}
+nav a {
+  margin-left: 20px;
+  color: var(--slate);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--red);
+}
+
+main {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+h2,
+h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+.card {
+  max-width: 30rem;
+  background-color: #fff;
+  border: 1px solid var(--border);
+  padding: 1.25rem;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.card + .card {
+  margin-top: 1.5rem;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0 0 0.75rem;
+}
+
+.material {
+  font-size: 0.875rem;
+  color: var(--slate);
+}
+
+@media (min-width: 48rem) {
+  .header-info {
+    display: flex;
+  }
+}
