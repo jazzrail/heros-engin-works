@@ -163,6 +163,34 @@ h3 {
   color: var(--slate);
 }
 
+.tag {
+  display: inline-block;
+  margin: 0;
+  padding: 0.375rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background-color: #efece0;
+  border: 1px solid var(--border);
+}
+
+h1 {
+  margin: var(--space-l) 0 0;
+  font-family: var(--font-serif);
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 48rem) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
 @media (min-width: 48rem) {
   .header-info {
     display: flex;
