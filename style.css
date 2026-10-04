@@ -13,6 +13,11 @@
   --space-m: 1rem;
   --space-l: 1.5rem;
   --space-xl: 2rem;
+
+  --text-xs: 0.6875rem;
+  --text-s: 0.875rem;
+  --text-l: 1.5rem;
+  --text-xl: 1.75rem;
 }
 
 * {
@@ -50,7 +55,7 @@ header {
   background-color: var(--dark);
   color: #e7e5e4;
   padding: 0.25rem 0.75rem;
-  font-size: 0.6875rem;
+  font-size: var(--text-xs);
 }
 
 .location::before {
@@ -86,7 +91,7 @@ header {
 
 .brand-name {
   font-family: var(--font-serif);
-  font-size: 1.75rem;
+  font-size: var(--text-xl);
   font-weight: 700;
   line-height: 1.1;
   color: var(--red);
@@ -94,7 +99,7 @@ header {
 
 .brand-sub {
   font-family: var(--font-mono);
-  font-size: 0.6875rem;
+  font-size: var(--text-xs);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--slate);
@@ -146,7 +151,7 @@ h3 {
 
 .card h3 {
   margin: var(--space-m) 0 var(--space-xs); /* was 1rem 0 0.5rem */
-  font-size: 1.5rem;
+  font-size: var(--text-l);
 }
 
 .card p {
@@ -154,7 +159,7 @@ h3 {
 }
 
 .material {
-  font-size: 0.875rem;
+  font-size: var(--text-s);
   color: var(--slate);
 }
 
